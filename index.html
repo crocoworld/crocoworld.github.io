@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.html">
+    <title>$CROC - Home</title>
+    <link rel="stylesheet" href="assets/css/rawline.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .top_button {
+            display: inline;
+            width: 100%;
+            text-align: right;
+        }
+
+        .navbar_mod {
+            width: 100%;
+        }
+
+        .button_override {
+            text-align: center;
+        }
+
+        .section-roadmap-style {
+            background: rgba(0, 0, 0, .17);
+            backdrop-filter: blur(15px);
+            box-sizing: border-box;
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .seperator-margin {
+            margin-top: 50px;
+        }
+
+        .croco-image {
+            width: 30%;
+            height: 30%;
+            display: inline-block;
+        }
+
+        .roadmap-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .roadmap-text-block {
+            display: inline-block;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            padding-left: 10em;
+            padding-right: 10em;
+            height: 100%;
+        }
+
+        .roadmap-text-block p {
+            font-size: larger;
+        }
+
+        .roadmap-text-block h1 {
+            font-size: 2em;
+            font-weight: normal;
+            color: rgba(255, 255, 255, .8);
+            margin-top: auto;
+        }
+
+        .section__container {
+            padding-left: 3em;
+            padding-right: 3em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        .description_text {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        .section_about_style p {
+            padding-left: 5em;
+            padding-right: 5em;
+            line-height: 35px;
+            font-size: larger;
+        }
+
+        .section_about_style h2 {
+            padding: 1em;
+        }
+
+        .section__container.section_about_style {
+            padding-top: 1em;
+            padding-bottom: 7em;
+        }
+
+        .animation-element
+        {
+            visibility: hidden;
+        }
+
+        .animation-element.visible {
+            visibility: visible;
+            animation: reveal-hero-heading 2s ease-out both;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+
+            var elements = document.querySelectorAll('.animation-element');
+
+            elements.forEach(function (element) {
+                var elementPosition = element.getBoundingClientRect().top + scrollPosition;
+
+                if (elementPosition < window.innerHeight + scrollPosition) {
+                    element.classList.add('visible');
+                }
+                else
+                    element.classList.remove('visible');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="navbar_mod navbar__branding">
+                    <a href="">
+                        <span>welcome to crocoworld</span>
+                    </a>
+                </div>
+                <div class="top_button">
+                    <a href="#section-about" class="button_override button button--secondary">about us</a>
+                    <a href="#section-roadmap" class="button_override button button--secondary">roadmap</a>
+                </div>
+                <input type="checkbox" id="input-navbar" style="display: none;">
+                <div class="navbar__items">
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main__container">
+                <section class="section section--hero">
+                    <div class="clouds"></div>
+                    <div class="section__container" style="height: 90%;">
+                        <div class="section__image"
+                            style="--image-url: url('https://cdn.discordapp.com/attachments/1119686750390984756/1218239890592891030/ss_0dbeabe8de69fb4555fa40b06a872e8ecb743c64.600x338.jpg?ex=6606f14f&is=65f47c4f&hm=79540110faf4489028cb9cb22b5a9492d130f65502ce2f140e98f70c1077a56e&');">
+                        </div>
+                        <div class="section__content">
+                            <h1 class="section__heading">$CROC 🐊</h1>
+                            <p class="section__subheading">scares all the best !</p>
+                            <div class="section__buttons">
+                                <a href="https://t.me/crocoworldportal" class="button button--secondary">Telegram</a>
+                                <a href="https://solscan.io/account/EiafrWnnf29S6wS8mpq6SyYBDsXenL22Fd2zZKiz1U6U"
+                                    class=" button button--primary">PRE-SALE</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-about" style="height: 75px;"></section>
+                <div class="animation-element">
+                    <section class="section section--about">
+                        <div class="section__container section_about_style">
+                            <div class="section__content">
+                                <h2 class="section__heading">ABOUT US</h2>
+                                <p class="description_text">
+                                    In the burgeoning universe of cryptocurrencies, a new star shines bright: CROC.
+                                    <br />Currently in pre-sale, this digital currency is based on the Solana
+                                    Block chain,
+                                    <br />Offering a robust and swift platform for its transactions.
+                                    <br />But CROC is not just another cryptocurrency;
+                                    <br />Its ambition is to conquer the market with a targeted market
+                                    Capitalization of 100 million dollars.
+
+                                    <br />Dive into this promising financial journey with CROC.
+                                    <br />This crypto meme patiently awaits investors to join in on this perpetual adventure. 
+                                    <br />The team behind CROC is determined to realize this ambitious vision, with a well-elaborated expansion plan.
+
+                                    <br />In this ever-evolving world of digital currencies, CROC stands out with its
+                                    Unique proposition and its drive to grow.
+                                    
+                                    <br />Join the movement and witness the rise of this
+                                    Captivating project.
+                                </p>
+                                <h2 class="section__heading">JOIN THE CROCOWORLD</h2>
+                                <p class="description_text">
+                                    $CROC (CROCOWORLD) 🐊
+                                </p>
+
+                                <p>
+                                    Minimum buy: 0.5 SOL SC: 150 HC: 250
+                                </p>
+                                <p>
+                                    Maximum buy: 4 SOL
+                                </p>
+
+                                <p>
+                                    Wallet for presale:
+                                </p>
+                                <p>
+                                    EiafrWnnf29S6wS8mpq6SyYBDsXenL22Fd2zZKiz1U6U
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <section id="section-roadmap"></section>
+            <div class="seperator-margin animation-element">
+                <div class="section__container section section--about section-roadmap-style">
+                    <div class="roadmap-content">
+                        <div class="roadmap-text-block">
+                            <h2 class="section__heading">Road Map</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seperator-margin animation-element">
+                <div class="section__container section section--about section-roadmap-style">
+                    <div class="roadmap-content">
+                        <img src="./assets/images/croco1.jpg" class="croco-image" />
+                        <div class="roadmap-text-block">
+                            <h1>
+                                PHASE 1 :
+                            </h1>
+                            <p>
+                                Website deployment, Pre-sale reaches the limit,
+                                Instagram and X campaign to grow our community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seperator-margin animation-element">
+                <div class="section__container section section--about section-roadmap-style">
+                    <div class="roadmap-content">
+                        <img src="./assets/images/croco4.jpg" class="croco-image" />
+                        <div class="roadmap-text-block">
+                            <h1>
+                                PHASE 2 :
+                            </h1>
+                            <p>
+                                Token launch, Reach 1 Million Market Cap, Coingeko listing, CoinMarketCap listing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seperator-margin animation-element">
+                <div class="section__container section section--about section-roadmap-style">
+                    <div class="roadmap-content">
+                        <img src="./assets/images/croco3.jpg" class="croco-image" />
+                        <div class="roadmap-text-block">
+                            <h1>
+                                PHASE 3 :
+                            </h1>
+                            <p>
+                                Giveaway, Reach 10 Million Market Cap, Influencer Marketing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="seperator-margin animation-element">
+                    <div class="section__container section section--about section-roadmap-style">
+                        <div class="roadmap-content">
+                            <img src="./assets/images/croco2.jpg" class="croco-image" />
+                            <div class="roadmap-text-block">
+                                <h1>
+                                    FINAL PHASE :
+                                </h1>
+                                <p>
+                                    Reach 100 Million Market Cap, Launch NFT collection and a special collaboration..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<footer class="footer" id="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+            <div class="footer__copyright">
+            </div>
+            <div class="footer__affiliation">
+            </div>
+        </div>
+        <div class="footer__icons">
+        </div>
+    </div>
+</footer>
+
+</html>
